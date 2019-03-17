@@ -45,6 +45,13 @@
 		8EE129721C46CA1B000D404F /* UserPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE129711C46CA1B000D404F /* UserPreferences.swift */; };
 		8EE129741C46D3C7000D404F /* StatusNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE129731C46D3C7000D404F /* StatusNotification.swift */; };
 		8EF30ED31D32B3170010BC49 /* BatteryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE1296F1C4695B5000D404F /* BatteryService.swift */; };
+		C58CD0C4223EF4B800D286C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58CD0C3223EF4B800D286C0 /* AppDelegate.swift */; };
+		C58CD0C6223EF4BA00D286C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C58CD0C5223EF4BA00D286C0 /* Assets.xcassets */; };
+		C58CD0C9223EF4BA00D286C0 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C58CD0C7223EF4BA00D286C0 /* MainMenu.xib */; };
+		C58CD0D0223EF4FD00D286C0 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C58CD0CF223EF4FD00D286C0 /* ServiceManagement.framework */; };
+		C58CD0D1223EF50300D286C0 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C58CD0CF223EF4FD00D286C0 /* ServiceManagement.framework */; };
+		C58CD0D2223EF50300D286C0 /* ServiceManagement.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C58CD0CF223EF4FD00D286C0 /* ServiceManagement.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C58CD0D3223EF55F00D286C0 /* Apple Juice Launch Helper.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = C58CD0C1223EF4B800D286C0 /* Apple Juice Launch Helper.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		C5D7EB48209891D500012A81 /* BatteryHealthType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D7EB47209891D500012A81 /* BatteryHealthType.swift */; };
 		C5EEDA6920276240004DE64C /* PreferenceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5EEDA6820276240004DE64C /* PreferenceKey.swift */; };
 /* End PBXBuildFile section */
@@ -67,6 +74,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				8EBF29DF1C4845F6005BBAE0 /* Sparkle.framework in Embed Frameworks */,
+				C58CD0D2223EF50300D286C0 /* ServiceManagement.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -74,9 +82,10 @@
 		8EBF29E11C48461A005BBAE0 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 16;
+			dstPath = Contents/Library/LoginItems;
+			dstSubfolderSpec = 1;
 			files = (
+				C58CD0D3223EF55F00D286C0 /* Apple Juice Launch Helper.app in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,6 +151,13 @@
 		C58CD0BA2221DBB500D286C0 /* es */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = es; path = es.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		C58CD0BB2221E6B900D286C0 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "pt-BR"; path = "pt-BR.lproj/MainMenu.xib"; sourceTree = "<group>"; };
 		C58CD0BC2221EACF00D286C0 /* Apple Juice.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Apple Juice.entitlements"; sourceTree = "<group>"; };
+		C58CD0C1223EF4B800D286C0 /* Apple Juice Launch Helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Apple Juice Launch Helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C58CD0C3223EF4B800D286C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C58CD0C5223EF4BA00D286C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C58CD0C8223EF4BA00D286C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		C58CD0CA223EF4BA00D286C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C58CD0CB223EF4BA00D286C0 /* Apple_Juice_Launch_Helper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Apple_Juice_Launch_Helper.entitlements; sourceTree = "<group>"; };
+		C58CD0CF223EF4FD00D286C0 /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
 		C5D7EB47209891D500012A81 /* BatteryHealthType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryHealthType.swift; sourceTree = "<group>"; };
 		C5EEDA6820276240004DE64C /* PreferenceKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferenceKey.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -159,7 +175,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C58CD0D1223EF50300D286C0 /* ServiceManagement.framework in Frameworks */,
+				C58CD0D0223EF4FD00D286C0 /* ServiceManagement.framework in Frameworks */,
 				8EBF29DE1C4845F6005BBAE0 /* Sparkle.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C58CD0BE223EF4B800D286C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,6 +243,7 @@
 			children = (
 				8EBEB4441C466091001DBE91 /* Apple Juice */,
 				8E0D33B11D3118CD002D3463 /* Apple Juice Widget */,
+				C58CD0C2223EF4B800D286C0 /* Apple Juice Launch Helper */,
 				8EE1297B1C46F891000D404F /* Frameworks */,
 				8EBEB4431C466091001DBE91 /* Products */,
 			);
@@ -228,6 +254,7 @@
 			children = (
 				8EBEB4421C466091001DBE91 /* Apple Juice.app */,
 				8E0D33AF1D3118CD002D3463 /* Apple Juice Widget.appex */,
+				C58CD0C1223EF4B800D286C0 /* Apple Juice Launch Helper.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -276,10 +303,23 @@
 		8EE1297B1C46F891000D404F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C58CD0CF223EF4FD00D286C0 /* ServiceManagement.framework */,
 				8EBF29DD1C4845F6005BBAE0 /* Sparkle.framework */,
 				8EE1297C1C46F891000D404F /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C58CD0C2223EF4B800D286C0 /* Apple Juice Launch Helper */ = {
+			isa = PBXGroup;
+			children = (
+				C58CD0C3223EF4B800D286C0 /* AppDelegate.swift */,
+				C58CD0C5223EF4BA00D286C0 /* Assets.xcassets */,
+				C58CD0C7223EF4BA00D286C0 /* MainMenu.xib */,
+				C58CD0CA223EF4BA00D286C0 /* Info.plist */,
+				C58CD0CB223EF4BA00D286C0 /* Apple_Juice_Launch_Helper.entitlements */,
+			);
+			path = "Apple Juice Launch Helper";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -324,13 +364,30 @@
 			productReference = 8EBEB4421C466091001DBE91 /* Apple Juice.app */;
 			productType = "com.apple.product-type.application";
 		};
+		C58CD0C0223EF4B800D286C0 /* Apple Juice Launch Helper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C58CD0CE223EF4BA00D286C0 /* Build configuration list for PBXNativeTarget "Apple Juice Launch Helper" */;
+			buildPhases = (
+				C58CD0BD223EF4B800D286C0 /* Sources */,
+				C58CD0BE223EF4B800D286C0 /* Frameworks */,
+				C58CD0BF223EF4B800D286C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Apple Juice Launch Helper";
+			productName = "Apple Juice Launch Helper";
+			productReference = C58CD0C1223EF4B800D286C0 /* Apple Juice Launch Helper.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		8EBEB43A1C466091001DBE91 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0800;
+				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Raphael Hanneken";
 				TargetAttributes = {
@@ -350,6 +407,9 @@
 								enabled = 1;
 							};
 						};
+					};
+					C58CD0C0223EF4B800D286C0 = {
+						CreatedOnToolsVersion = 10.1;
 					};
 				};
 			};
@@ -373,6 +433,7 @@
 			targets = (
 				8EBEB4411C466091001DBE91 /* Apple Juice */,
 				8E0D33AE1D3118CD002D3463 /* Apple Juice Widget */,
+				C58CD0C0223EF4B800D286C0 /* Apple Juice Launch Helper */,
 			);
 		};
 /* End PBXProject section */
@@ -397,6 +458,15 @@
 				8E995BBB1EABDB2F00CE8364 /* dsa_pub.pem in Resources */,
 				8EBF29E91C485493005BBAE0 /* Localizable.strings in Resources */,
 				8EBEB44B1C466091001DBE91 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C58CD0BF223EF4B800D286C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C58CD0C6223EF4BA00D286C0 /* Assets.xcassets in Resources */,
+				C58CD0C9223EF4BA00D286C0 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,6 +531,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C58CD0BD223EF4B800D286C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C58CD0C4223EF4B800D286C0 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -498,6 +576,14 @@
 				5EF9F80621FB7A3300748374 /* pt-BR */,
 			);
 			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		C58CD0C7223EF4BA00D286C0 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C58CD0C8223EF4BA00D286C0 /* Base */,
+			);
+			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -659,6 +745,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Apple Juice/Apple Juice.entitlements";
 				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
@@ -682,6 +769,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Apple Juice/Apple Juice.entitlements";
 				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
@@ -694,6 +782,64 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = io.raphaelhanneken.applejuice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		C58CD0CC223EF4BA00D286C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = "Apple Juice Launch Helper/Apple_Juice_Launch_Helper.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "Apple Juice Launch Helper/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.raphaelhanneken.Apple-Juice-Launch-Helper";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		C58CD0CD223EF4BA00D286C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = "Apple Juice Launch Helper/Apple_Juice_Launch_Helper.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "Apple Juice Launch Helper/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.raphaelhanneken.Apple-Juice-Launch-Helper";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
@@ -724,6 +870,15 @@
 			buildConfigurations = (
 				8EBEB4501C466091001DBE91 /* Debug */,
 				8EBEB4511C466091001DBE91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C58CD0CE223EF4BA00D286C0 /* Build configuration list for PBXNativeTarget "Apple Juice Launch Helper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C58CD0CC223EF4BA00D286C0 /* Debug */,
+				C58CD0CD223EF4BA00D286C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
